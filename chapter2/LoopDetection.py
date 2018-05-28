@@ -1,6 +1,6 @@
 from LinkedList import LinkedList
 
-def intersection(ll):
+def loop_detection(ll):
     if ll.head is None or ll.head.next is None:
         return None
     slow = ll.head
