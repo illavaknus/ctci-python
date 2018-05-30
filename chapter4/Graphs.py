@@ -1,5 +1,5 @@
 def bfs(graph, node):
-    visited = []
+    visited = [node]
     next_nodes = [node]
     
     levels = {}
@@ -7,8 +7,6 @@ def bfs(graph, node):
     
     while len(next_nodes):
         cur = next_nodes.pop(0)
-        if cur not in visited:
-            visited.append(cur)
         for neighbor in graph[cur]:
             if neighbor not in visited:
                 visited.append(neighbor)
